@@ -1,0 +1,25 @@
+.sidenav {
+    top: 35%;
+    text-align: center;
+    position: fixed;
+    width: 30px;
+    background-color: transparent;
+    height: 30vh;
+    align-items: center;
+    z-index: 9;
+}
+
+.sidenav li {
+margin: 20px;
+list-style-type: none;
+}
+
+
+.sidenav span {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: auto;
+}

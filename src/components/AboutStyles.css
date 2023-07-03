@@ -1,0 +1,13 @@
+.about{
+background: url("./Assets/pg-01.jpg") center no-repeat fixed;
+background-size: cover;
+display: flex;
+align-items: center;
+}
+.about div{
+    width: 70%;
+    height: 60%;
+    border-radius: 10px;
+    margin: auto;
+    backdrop-filter: blur(4px);
+}

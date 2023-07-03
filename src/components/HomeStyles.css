@@ -1,0 +1,27 @@
+.home {
+    background: url("./Assets/home-background.webp") no-repeat center;
+    background-size: cover;
+    background-attachment:fixed ;
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
+.home div{
+    text-align: center;
+    margin: auto;
+}
+.home h1{
+    font-size: 5rem;
+    color: #fff;
+    
+}
+.home h3{
+    font-size: 2rem;
+    color: #312f2f;
+    margin: 0 0 2% 0;
+}
+.home p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: aliceblue;
+}
