@@ -4,7 +4,6 @@ import Intro from "../components/Intro";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
 import Service from "../components/Service";
-import Subscribe from "../components/Subscribe";
 import AboutPage from "../components/AboutPage";
 import ProjectPanel from "../components/ProjectPanel";
 import SkillPanel from "../components/SkillPanel";

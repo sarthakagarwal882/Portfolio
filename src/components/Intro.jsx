@@ -1,34 +1,34 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
 import MyImg from "../assets/my image.jpg";
 import { TypeAnimation } from "react-type-animation";
 
 function Intro() {
-  let displayProfile = [
-    "Full Stack Developer",
-    "Web Developer",
-    "Website Designer",
-  ];
+  // let displayProfile = [
+  //   "Full Stack Developer",
+  //   "Web Developer",
+  //   "Website Designer",
+  // ];
 
-  const [currentText, setCurrentText] = useState(displayProfile[0]);
-  const [fadeIn, setFadeIn] = useState(true);
+  // const [currentText, setCurrentText] = useState(displayProfile[0]);
+  // const [fadeIn, setFadeIn] = useState(true);
 
-  useEffect(() => {
-    const textInterval = setInterval(() => {
-      setFadeIn(false); // Trigger fade-out
+  // useEffect(() => {
+  //   const textInterval = setInterval(() => {
+  //     setFadeIn(false); // Trigger fade-out
 
-      setTimeout(() => {
-        // Change the text after fade-out, then fade-in again
-        setCurrentText((prevText) => {
-          const nextIndex =
-            (displayProfile.indexOf(prevText) + 1) % displayProfile.length;
-          return displayProfile[nextIndex];
-        });
-        setFadeIn(true); // Trigger fade-in
-      }, 500); // Wait for fade-out to complete (0.5s)
-    }, 1500); // Change text every 3 seconds
+  //     setTimeout(() => {
+  //       // Change the text after fade-out, then fade-in again
+  //       setCurrentText((prevText) => {
+  //         const nextIndex =
+  //           (displayProfile.indexOf(prevText) + 1) % displayProfile.length;
+  //         return displayProfile[nextIndex];
+  //       });
+  //       setFadeIn(true); // Trigger fade-in
+  //     }, 500); // Wait for fade-out to complete (0.5s)
+  //   }, 1500); // Change text every 3 seconds
 
-    return () => clearInterval(textInterval); // Cleanup interval on component unmount
-  }, []);
+  //   return () => clearInterval(textInterval); // Cleanup interval on component unmount
+  // }, []);
 
   return (
     <div className="relative min-h-screen flex justify-between px-[150px] pt-[5rem] bg-fixed backdrop-blur-[10px] z-0 bg-cover bg-backgroundColor">
