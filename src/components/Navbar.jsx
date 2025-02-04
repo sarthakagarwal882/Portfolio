@@ -1,32 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
 function Navbar() {
   return (
-    <section className="bg-backgroundColor backdrop-blur-[10px] shadow-navbar w-full h-[100px] flex justify-between items-center px-[150px] text-center fixed top-0 left-0 z-[30]">
-      {/* logo  */}
-      <div>
-        <Link
-          to="/"
-          className="text-textWhiteColor font-extrabold no-underline text-4xl	hover:text-textThemeColor"
-        >
-          SARTHAK
-        </Link>
-      </div>
+    <section className="bg-backgroundColor backdrop-blur-[10px] shadow-navbar w-auto h-[75px] flex justify-between items-center px-8 sm:px-8 md:px-16 lg:px-20 text-center fixed bottom-6 rounded-full left-1/2 transform -translate-x-1/2 z-[30]">
       {/* list  */}
-      <div className="flex justify-between items-center">
-        <ul className="flex justify-center gap-8 items-center m-auto text-center">
-          <li>
-            <Link
-              className="no-underline	text-textWhiteColor text-xl font-medium hover:text-textThemeColor"
-              to="/"
-            >
-              Home
-            </Link>
-          </li>
+      <div className="flex justify-between items-center w-full">
+        <ul className="flex justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-10 items-center m-auto text-center">
           <li>
             <a
               href="#projects"
-              className="no-underline	text-textWhiteColor text-xl font-medium hover:text-textThemeColor"
+              className="no-underline text-textWhiteColor text-sm sm:text-base md:text-lg lg:text-xl font-medium hover:text-textThemeColor"
             >
               Projects
             </a>
@@ -34,7 +16,7 @@ function Navbar() {
           <li>
             <a
               href="#skills"
-              className="no-underline	text-textWhiteColor text-xl font-medium hover:text-textThemeColor"
+              className="no-underline text-textWhiteColor text-sm sm:text-base md:text-lg lg:text-xl font-medium hover:text-textThemeColor"
             >
               Skills
             </a>
@@ -42,7 +24,7 @@ function Navbar() {
           <li>
             <a
               href="#about"
-              className="no-underline	text-textWhiteColor text-xl font-medium hover:text-textThemeColor"
+              className="no-underline text-textWhiteColor text-sm sm:text-base md:text-lg lg:text-xl font-medium hover:text-textThemeColor"
             >
               About
             </a>
@@ -50,9 +32,9 @@ function Navbar() {
           <li>
             <a
               href="#contacts"
-              className="no-underline	text-textWhiteColor text-xl font-medium hover:text-textThemeColor"
+              className="no-underline text-textWhiteColor text-sm sm:text-base md:text-lg lg:text-xl font-medium hover:text-textThemeColor"
             >
-              Contact Me
+              Contact
             </a>
           </li>
         </ul>

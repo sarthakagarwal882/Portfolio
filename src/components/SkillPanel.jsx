@@ -110,26 +110,33 @@ function SkillPanel() {
   ];
   return (
     <>
-      <div className="w-[65%] m-auto pt-16 pb-56">
+      <div className="w-full px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 pt-16 pb-36">
         {/* top text  */}
-        <div className="">
-          <h1 className="font-bold text-white text-7xl text-center">
-            Tech Stack{" "}
+        <div className="text-center">
+          <h1 className="font-bold text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+            Tech Stack
           </h1>
-          <p className="text-center text-textWhiteColor pt-2">
-            These are my skills on the basis of which i have made projects.
+          <p className="text-textWhiteColor pt-2">
+            These are my skills on the basis of which I have made projects.
           </p>
         </div>
         {/* skills  */}
         <div className="mt-16">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-16">
+          <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 sm:gap-12 md:gap-16">
             {skills.map((skill, index) => (
               <div
                 key={index}
-                className="flex flex-col text-center justify-center items-center gap-2"
+                className="flex flex-col justify-center items-center gap-2"
               >
-                <img src={skill.icon} alt={skill.name} className="max-w-20 max-h-20 h-20 w-20" />
-                <p className="text-white font-bold">{skill.name}</p>
+                <img
+                  loading="lazy"
+                  src={skill.icon}
+                  alt={skill.name}
+                  className="w-12 sm:w-20"
+                />
+                <p className="text-white font-bold text-sm sm:text-base text-center">
+                  {skill.name}
+                </p>
               </div>
             ))}
           </div>

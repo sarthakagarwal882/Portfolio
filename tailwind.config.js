@@ -15,6 +15,7 @@ module.exports = {
         textThemeColor: "#06d6a0",
         textWhiteColor: "#d8d1e2",
         inputColor: "#241c34",
+        // backgroundColor: "#",
         backgroundColor: "rgb(11 1 28 / var(--tw-bg-opacity, 0.7))",
       },
       boxShadow: {

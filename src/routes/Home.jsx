@@ -1,35 +1,38 @@
-import React from "react";
-import Navbar from "../components/Navbar";
-import Intro from "../components/Intro";
-import Faq from "../components/Faq";
-import Footer from "../components/Footer";
-import Service from "../components/Service";
-import AboutPage from "../components/AboutPage";
-import ProjectPanel from "../components/ProjectPanel";
-import SkillPanel from "../components/SkillPanel";
+import React, { Suspense, lazy } from "react";
+
+const Navbar = lazy(() => import("../components/Navbar"));
+const Intro = lazy(() => import("../components/Intro"));
+const Faq = lazy(() => import("../components/Faq"));
+const Footer = lazy(() => import("../components/Footer"));
+const Service = lazy(() => import("../components/Service"));
+const AboutPage = lazy(() => import("../components/AboutPage"));
+const ProjectPanel = lazy(() => import("../components/ProjectPanel"));
+const SkillPanel = lazy(() => import("../components/SkillPanel"));
 
 function Home({ cssClass }) {
   document.title = "Sarthak - Portfolio";
   return (
-    <div>
-      <Navbar />
-      <Intro />
-      <Service />
-      <section id="skills">
-        <SkillPanel />
-      </section>
-      <section id="projects">
-        <ProjectPanel />
-      </section>
-      {/* <Subscribe /> */}
-      <section id="about">
-        <AboutPage />
-      </section>
-      <Faq />
-      <section id="contacts">
-        <Footer />
-      </section>
-    </div>
+    <Suspense fallback={<div>Loading...</div>}>
+      <div>
+        <Navbar />
+        <Intro />
+        <Service />
+        <section id="projects">
+          <ProjectPanel />
+        </section>
+        <section id="skills">
+          <SkillPanel />
+        </section>
+        {/* <Subscribe /> */}
+        <section id="about">
+          <AboutPage />
+        </section>
+        <Faq />
+        <section id="contacts">
+          <Footer />
+        </section>
+      </div>
+    </Suspense>
   );
 }
 

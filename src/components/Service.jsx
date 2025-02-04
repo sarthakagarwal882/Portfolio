@@ -9,7 +9,6 @@ import Maintainance from "../assets/maintainance.png";
 import AnimationLogo from "../assets/animation.png";
 
 function Service() {
-
   const Services = [
     {
       title: "Custom Websites",
@@ -76,7 +75,7 @@ function Service() {
   // }, []);
 
   return (
-    <div className="bg-backgroundColor flex flex-col items-center px-4 sm:px-8 md:px-16 lg:px-[150px] pt-20 pb-16">
+    <div className="bg-backgroundColor flex flex-col items-center px-4 sm:px-8 md:px-16 lg:px-[150px] pt-24 pb-16">
       <h1 className="font-bold text-white text-4xl md:text-6xl text-center">
         Services I Offer
       </h1>
@@ -85,9 +84,7 @@ function Service() {
         professional, custom-built web solutions tailored to meet your goals.
       </p>
 
-      <div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-12 justify-center mx-auto"
-      >
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-12 justify-center mx-auto">
         {Services.map((item, index) => (
           <ServiceCard key={index} service={item} index={index} />
         ))}
@@ -119,6 +116,7 @@ const ServiceCard = ({ service, index }) => {
       className="flex flex-col items-center border-2 border-gray-600 shadow-lg w-full max-w-sm px-6 py-4 min-h-[20rem] rounded-2xl bg-gray-800 text-center service-bounce"
     >
       <img
+        loading="lazy"
         src={service.icon}
         alt={service.title}
         className="py-4 max-w-[80px] max-h-[100px] object-contain"
