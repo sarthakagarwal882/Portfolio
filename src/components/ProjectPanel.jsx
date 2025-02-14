@@ -21,7 +21,7 @@ function ProjectPanel() {
       title: "Proacademy",
       description:
         "I developed the promotional website for ProAcademy, an e-learning platform for gamers to purchase courses from top coaches, book 1:1 live sessions, and access expert guides to enhance their skills.",
-      live: "https://proacademy.vercel.app",
+      live: "https://proacademy.gg",
       image: "/proacademy.png",
     },
     {
