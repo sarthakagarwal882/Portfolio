@@ -2,7 +2,7 @@
 
 A Portfolio website using react and some bootstrap functionality.
 
-# [Visit the site](https://furkan-portfolio.vercel.app/)
+# [Visit the site](https://sarthak882.vercel.app/)
 
 ## Features
 

@@ -17,6 +17,9 @@ function Home({ cssClass }) {
         <Navbar />
         <Intro />
         <Service />
+        <section id="about">
+          <AboutPage />
+        </section>
         <section id="projects">
           <ProjectPanel />
         </section>
@@ -24,9 +27,6 @@ function Home({ cssClass }) {
           <SkillPanel />
         </section>
         {/* <Subscribe /> */}
-        <section id="about">
-          <AboutPage />
-        </section>
         <Faq />
         <section id="contacts">
           <Footer />
