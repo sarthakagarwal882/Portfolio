@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import React, { Suspense, lazy } from "react";
 
 const Navbar = lazy(() => import("../components/Navbar"));
@@ -14,6 +15,7 @@ function Home({ cssClass }) {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <div>
+        <Analytics />
         <Navbar />
         <Intro />
         <Service />
