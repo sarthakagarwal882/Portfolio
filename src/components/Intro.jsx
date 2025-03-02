@@ -32,14 +32,12 @@ function Intro() {
           </span>
         </h1>
 
-        <p className="text-textWhiteColor [text-shadow:2px_2px_4px_rgba(255,255,255,0.2)] font-medium text-lg md:text-xl text-center md:text-left md:-mt-6 -mt-12">
-          <span className="font-bold">Hi</span>, I create stunning, responsive
-          websites that stand out from the crowd. While others rely on
-          templates, I craft custom, pixel-perfect solutions that align with
-          your brand. I don't just build websites—I architect digital
-          experiences that load faster, perform better, and convert visitors
-          into customers. Your site won't just look amazing—it'll outperform
-          your competitors.
+        <p className="text-textWhiteColor [text-shadow:2px_2px_4px_rgba(255,255,255,0.2)] font-medium text-lg md:text-xl text-center md:text-left md:-mt-12 -mt-8">
+          <span className="font-bold">Hi</span>, I create custom,
+          high-performance websites that captivate and convert. No
+          templates—just pixel-perfect, responsive designs tailored to your
+          brand. My websites don’t just look great; they load faster, perform
+          better, and give you a competitive edge.
         </p>
 
         {/* Buttons */}
