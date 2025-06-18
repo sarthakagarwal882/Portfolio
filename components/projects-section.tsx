@@ -14,26 +14,8 @@ export function ProjectsSection() {
       description:
         "A community-driven platform and marketplace for hobbyists to connect with coaches, venues, suppliers, workshops, and events—locally and online.",
       technologies: ["TypeScript", "Next.js", "Redux"],
-      liveUrl: "#",
+      liveUrl: "https://hobbycue.com/",
       category: "Optimization",
-    },
-    {
-      title: "BandhejHub",
-      image: "/bandhejhub.webp?text=BandhejHub",
-      description:
-        "An E-Commerce platform specializing in Bandhani products, offering a seamless shopping experience for traditional handcrafted textiles.",
-      technologies: [
-        "React.js",
-        "TypeScript",
-        "Node.js",
-        "Express.js",
-        "Tailwind CSS",
-        "MongoDB",
-        "Stripe API",
-        "Nodemailer",
-      ],
-      liveUrl: "#",
-      category: "E-commerce",
     },
     {
       title: "Faceon",
@@ -41,7 +23,7 @@ export function ProjectsSection() {
       description:
         "A telemedicine app enabling global users to consult with verified Korean plastic surgeons and dentists via free video sessions. Features include guided photo uploads, multilingual support (including AI‑based Arabic translation), and remote appointment booking.",
       technologies: ["React.js", "Redux", "Tailwind CSS"],
-      liveUrl: "#",
+      liveUrl: "https://app.faceonkorea.com/",
       category: "Enterprise",
     },
     {
@@ -51,7 +33,7 @@ export function ProjectsSection() {
         "A telemedicine platform that enables reliable cosmetic consultations and services worldwide by combining AI-enhanced tools with verified medical professionals and seamless global access.",
 
       technologies: ["React.js", "Tailwind CSS", "Firebase", "React Router"],
-      liveUrl: "#",
+      liveUrl: "https://www.linkiss.io/",
       category: "Utility",
     },
     {
@@ -61,7 +43,7 @@ export function ProjectsSection() {
         "An AI-powered skincare advisor that analyzes a selfie in under 3 minutes to assess hydration, acne, wrinkles, and texture. Provides personalized skincare routines, tailored product recommendations, and monthly progress tracking via voice-assistant dermatology.",
 
       technologies: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS"],
-      liveUrl: "#",
+      liveUrl: "https://cosmi.skin/",
       category: "Productivity",
     },
     {
@@ -78,7 +60,7 @@ export function ProjectsSection() {
         "Express.js",
         "Tailwind CSS",
       ],
-      liveUrl: "#",
+      liveUrl: "https://soe-jnu.vercel.app/",
       category: "Educational",
     },
 
@@ -89,7 +71,7 @@ export function ProjectsSection() {
         "An internal business management system for print operations, offering job estimation, inventory tracking, invoicing, shipping, and role-based access control.",
 
       technologies: ["Next.js", "Redux", "Tailwind CSS"],
-      liveUrl: "#",
+      liveUrl: "https://inkprintmis.in/",
       category: "Enterprise",
     },
   ];
@@ -106,7 +88,7 @@ export function ProjectsSection() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <motion.div
+            <motion.a
               key={index}
               className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 group"
               initial={{ opacity: 0, y: 30 }}
@@ -114,6 +96,10 @@ export function ProjectsSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ y: -5 }}
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`View ${project.title} project`}
             >
               <div className="relative overflow-hidden">
                 <motion.img
@@ -130,7 +116,9 @@ export function ProjectsSection() {
 
               <div className="p-6 space-y-4">
                 <div>
-                  <div className="flex items-center justify-start gap-2 mb-2">
+                  <div
+                    className="flex items-center justify-start gap-2 mb-2"
+                  >
                     <h3 className="text-xl font-bold text-gray-900">
                       {project.title}
                     </h3>
@@ -163,7 +151,7 @@ export function ProjectsSection() {
                   </Button>
                 </div> */}
               </div>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
 
