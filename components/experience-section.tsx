@@ -182,7 +182,7 @@ export function ExperienceSection() {
                       <div className="flex items-start gap-4">
                         <div className="w-16 h-16 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center flex-shrink-0">
                           <img
-                            src={exp.logo || "/placeholder.svg"}
+                            src={exp.logo}
                             alt={`${exp.company} logo`}
                             className="w-12 h-12 object-contain"
                           />
